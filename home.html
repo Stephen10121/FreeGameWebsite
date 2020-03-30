@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+
+        /*Creating Body*/
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html, body {
+            overflow-x: hidden;
+        }   
+
+        body {
+            background-color: #e3e6e8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-rows: 74px 1fr 250px;
+        }
+
+        /*Header*/
+
+        #header {
+            background-color: #4ea3d1;
+            opacity: 80%;
+        }
+
+        #header a {
+            text-align: center;
+        }
+
+        #logo {
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        #logo a{
+            text-transform: uppercase;
+            text-align: center;
+            color: black;
+            padding-top: 5px;
+
+        }
+
+        .options {
+            text-transform: uppercase;
+            display: inline;
+            padding: 10px;
+            padding-top: 25px;
+            color: black;
+            text-align: center;
+        }
+
+        .option-box {
+            margin: auto;
+            width: 150px;
+            padding: 10px;
+        }
+
+        /*Main*/
+
+        #main {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #tmain center p {
+          width: 60%;
+        }
+
+        #side-note {
+            display: none;
+        }
+
+        #ad {
+		    background-color: #e8e8e8;
+			width: 300px;
+            height: 300px;
+			border: 1px solid #47bdfc;
+		}
+
+        #ad a img {
+			width: 300px;
+            height: 300px;
+        }
+
+        /*Footer*/
+
+        #footer {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        #footer-right {
+            display: none;
+        }
+
+        #footer-right {
+          color: white;
+        }
+
+        #footer-left {
+          color: white;
+        }
+        
+        #footer {
+        	background-color: black;
+        }
+
+        .fnav a {
+            color: white;
+        }
+
+        @media only screen and (min-width: 800px) {
+            .option-box {
+                float: right;
+                padding-top: 25px;
+            }
+
+            #logo {
+                float: left;
+                padding-top: 22px;
+                padding-left: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 1000px){
+            #side-note {
+                display: block;
+            }
+
+            #main {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            }
+
+            #footer-right {
+                display: block;
+            }
+
+            #footer {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+    <div class="grid">
+        <div id="header">
+            <h2 id="logo"><a href="https://bro--stephen10121.repl.co/">fg</a></h2>
+            <div class="option-box">
+                <a class="options" href="/ad">admin</a>
+                <a class="options" href="/games">games</a>
+            </div>
+        </div>
+        <div id="main">
+            <div id="tmain">
+                <center>
+                    <br>
+                    <img src="https://www.tamicannizzaro.com/wp-content/uploads/2015/05/keep-calm-and-bring-your-a-game.png" alt="Image of a game controller"/>
+                    <br><br><h1>Free Games</h1><br><br>
+                    <p>This website is all about free games. If your school decides to block it, you can go here and play all you can. There is no fee, everything is free and you can go here anytime you want. If the school blocks this site, I will simply move it to another site. We started with nothing but then we had an idea that we should just make a website ourselves and soon enough we got it up and running.</p>
+                    <br>
+                    <br>
+                </center>
+            </div>
+            <div id="side-note">
+                <center>
+                    <br>
+                    Advertisment
+                    <br>
+                    <br>
+                    <div id="ad">
+                        <a href="https://bro--stephen10121.repl.co/rv">
+                            <img src="ad.png">
+                        </a>
+                    </div>
+                </center>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-left">
+                <center>
+                    <br><h4>Navigation</h4><br><br>
+                    <ul>
+                        <li class="fnav"><a href="/">Home</a></li><br>
+                        <li class="fnav"><a href="/ad">Admin</a></li><br>
+                        <li class="fnav"><a href="/games">Games</a></li><br>
+                        <li class="fnav"><a href="/audio">Audio</a></li>
+                    </ul>
+                </center>
+            </div>
+            <div id="footer-right">
+                <center>
+                    <br><h4>Where You Can Find Me</h4><br><br>
+                    <ul>
+                        <li class="fnav"><a href="https://github.com/Stephen10121" target="_blank">Github</a></li><br>
+                        <li class="fnav"><a href="#" target="_blank">LinkedIn</a></li><br>
+                        <li class="fnav"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+                    </ul>
+                </center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
